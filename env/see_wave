@@ -1,0 +1,5 @@
+#!/bin/csh
+
+verdi -sv -2001 +nospecify +define+v  \
+    -f filelist                       \
+    -ssf test.fsdb

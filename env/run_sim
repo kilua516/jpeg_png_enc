@@ -1,0 +1,10 @@
+#!/bin/csh
+
+vcs -full64 -I -R +vcs+lic+wait +nospecify +v2k -sverilog \
+    -P ${VERDI_HOME}/share/PLI/VCS/LINUX64/novas.tab      \
+       ${VERDI_HOME}/share/PLI/VCS/LINUX64/pli.a          \
+    -f filelist
+#vcs -I -R +vcs+lic+wait -nospecify +v2k -sverilog +define+v \
+#    -P ${VERDI_HOME}/share/PLI/VCS/LINUX64/novas.tab                \
+#       ${VERDI_HOME}/share/PLI/VCS/LINUX64/pli.a                    \
+#    -f filelist
